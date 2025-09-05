@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TDX Portal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Copied default styles !-->
+        <link rel="stylesheet" href="resources/css/_styles-bootstrap-3.4.1.css">
+        <link rel="stylesheet" href="resources/css/_styles-bootstrap-custom.css">
+        <link rel="stylesheet" href="resources/css/_styles-TDStyles.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <!-- Custom WSU styles for portal -->
+        <link rel="stylesheet" href="resources/css/styles-global.css">
+        <link rel="stylesheet" href="resources/css/styles-client-portal.css">
+    </head>
+    <body class="wsu-portal-page">
+        <header role="banner">
+            <div id="divMstrHeader" class="master-header NoPrint" style="background-color: #fff;">
+                <div class="logo-header-full hidden-xs">
+                    <div class="pull-left">
+                        <a href="#mainContent" class="sr-only sr-only-focusable">Skip to main content</a>
+                    </div>
+                    <div id="ctl00_divPageHeader" class="container logo-header clearfix" style="padding: 5px;">
+                        <div id="divLogo" class="pull-left logo-container">
+                            <a href="https://wayne.edu/" target="_blank">
+                                <img src="/resources/images/wsu-logo.png" alt="Wayne State University" class="js-logo img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <nav id="ctl00_mainNav" class="navbar navbar-default themed tdbar" aria-label="Primary">
+                    <div id="navContainer" class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="pull-left navbar-toggle collapsed themed tdbar-button-anchored tdbar-toggle gutter-left" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="tdbar-button-anchored icon-bar"></span>
+                                <span class="tdbar-button-anchored icon-bar"></span>
+                                <span class="tdbar-button-anchored icon-bar"></span>
+                                <span class="sr-only">Show Applications Menu</span>
+                            </button>
+                            <a class="navbar-brand hidden-sm hidden-md hidden-lg themed tdbar-button-anchored truncate-be" href="#">
+                                Client Portal
+                            </a>
+                        </div>
+                        <div id="td-navbar-collapse" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav nav-collapsing" id="collapseMe">
+                                <li id="divSearch" class="themed tdbar-button-anchored hidden-sm hidden-md hidden-lg" style="">
+                                    <a href="" title="search">Search</a>
+                                </li><li id="divProfile" class="themed tdbar-button-anchored hidden-sm hidden-md hidden-lg" style="">
+                                    <a href="">My Profile</a>
+                                </li><li id="divDesktop5b52d12c-b3cc-4b6b-ae68-ec43efda9a89" class="themed tdbar-button-anchored active">
+                                    <a href="" aria-current="page">Home</a>
+                                </li><li class="tdbar-sub-mobile hidden-sm hidden-md hidden-lg" style=""><ul class="nav-collapsing"></ul></li><li id="divTDProjects" class="themed tdbar-button-anchored">
+                                    <a href="">Projects</a>
+                                </li><li id="divTDRequests" class="themed tdbar-button-anchored sr-focusable">
+                                    <a href="">Services</a>
+                                </li><li id="divTDKnowledgeBase" class="themed tdbar-button-anchored sr-focusable">
+                                    <a href="">Knowledge Base</a>
+                                </li><li id="divSignout" class="themed tdbar-button-anchored hidden-sm hidden-md hidden-lg" style="">
+                                    <a href="">Sign Out</a>
+                                </li><li class="themed tdbar-button-anchored hidden-xs more-items-button hidden-important" id="moreMenu">
+                                    <a data-toggle="dropdown" title="More Applications" href="javascript:;">
+                                        <span class="sr-only">More Applications</span>
+                                        <span class="fa-solid fa-ellipsis-h" aria-hidden="true"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-right themed tdbar" id="collapsed"></ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div id="navShim" class="hidden-xs hidden-sm" style="padding-top: 160px;"></div>
+
+        <main role="main">
+            <div id="content" style="padding-top: 160px; margin-top: -160px;">
+                <div id="mainContent" tabindex="-1"></div>
+                <div class="container gutter-top gutter-bottom-lg">
+                    <div class="row">
+                        <div id="Column1" class="col-md-12 ui-sortable">

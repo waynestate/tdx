@@ -1,0 +1,294 @@
+/* ------------------------------------
+ * Service portal 
+ * ------------------------------------ */
+.wsu-service-portal {
+    width: 100%;
+    position: relative;
+    margin-top: -15px;
+    background-color: var(--green-900);
+
+    @media screen and (min-width: 900px) {
+        padding-top: 8rem;
+    }
+}
+
+.wsu-portal-page .wsu-service-portal__heading {
+    position: relative; 
+    color: white;
+    font-style: italic;
+    letter-spacing: 0.02rem;
+    text-shadow: 0 1px 1px rgba(12, 84, 73, 0.5);
+    text-shadow: 0 2px 2px rgba(5, 33, 30,0.75);
+    margin-bottom: 3rem !important;
+}
+
+.wsu-service-portal__heading em {
+    color: #ffcc33;
+    font-weight: 500;
+}
+
+.wsu-service-portal__content {
+    position: relative;
+    z-index: 3;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+
+    @media screen and (min-width: 900px) {
+        padding-top: 18rem;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+.wsu-button-grid {
+    display: grid;
+    gap: 1.5em;
+    color: #094038;
+    color: white;
+    margin-bottom: 0.9rem;
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+
+    @media screen and (min-width: 520px) {
+        gap: 2em;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        margin-bottom: 2em;
+    }
+
+    @media screen and (min-width: 900px) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-rows: repeat(1, minmax(0, 1fr));
+    }
+}
+
+.wsu-button-grid__button {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    padding: 1em;
+    border-radius: 3px;
+    transition: all 300ms;
+    color: var(--green-600);
+    box-shadow: 0 0 4px rgba(6, 43, 39,0.3);
+    background-color: var(--gold-200);
+    background-image: radial-gradient(230% 100% at 50% 100%,rgba(219, 174, 37,0.9),50%,transparent 100%);
+
+    @media screen and (min-width: 520px) {
+        padding: 1.5em;
+    }
+}
+
+.wsu-button-grid__button:focus,
+.wsu-button-grid__button:hover {
+    background-color: var(--gold-100);
+    background-image: radial-gradient(230% 100% at 50% 100%,rgba(219, 174, 37,0.75),50%,transparent 100%);
+    box-shadow: 0 -1px 3px rgba(255, 245, 214,0.2), 0 6px 8px rgba(5,33,30,0.4);
+
+    @media screen and (min-width: 520px) {
+        transform: translateY(-5px);
+    }
+}
+
+.wsu-button-grid__link {
+    position: absolute;
+    inset: 0;
+}
+
+.wsu-button-grid__title {
+    width: 100%;
+    font-size: 1.25em;
+    line-height: 1.1em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 0 -1px 0 rgba(255,245,214,0.3), 0 1px 0 rgba(200, 159, 31, 0.3);
+
+    @media screen and (min-width: 520px) {
+        font-size: 1.4em;
+        margin-bottom: 1.3rem;
+    }
+}
+
+.wsu-button-grid__description {
+    line-height: 1.3em;
+    text-shadow: 0 -1px 0 rgba(255,245,214,0.2), 0 1px 0 rgba(200, 159, 31, 0.3);
+}
+
+.wsu-service-portal__background {
+    color: var(--green-900);
+    background-image: url('https://services.wayne.edu/TDPortal/Images/Viewer?fileName=f00d37f1-4ba3-4866-ad4f-5dc115c3574e.jpg&beidInt=78');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
+    opacity: 0.3;
+
+    @media screen and (min-width: 900px) {
+        opacity: 1;
+    }
+}
+
+/* ------------------------------------
+ * Search 
+ * ------------------------------------ */
+.wsu-search {
+    width: 100%;
+    background-color: var(--green-700);
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+    background-image: radial-gradient(200% 100% at 50% 100%,rgba(5,33,30,.6) 10%,transparent 100%);
+    display: grid;
+    gap: 1em;
+
+    @media screen and (min-width: 520px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    @media screen and (min-width: 900px) {
+        display: flex;
+        gap: 2em;
+    }
+}
+
+.wsu-portal-page .wsu-search__title {
+    color: var(--gold-300);
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.3rem;
+    margin: 0;
+}
+
+.wsu-search__search-bar {
+    width: 100%;
+    max-width: 500px;
+}
+
+.input-group-btn:last-child > .btn {
+    height: 34px;
+}
+
+
+/* ------------------------------------
+ * Portal overview 
+ * ------------------------------------ */
+.portal-overview {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    font-size: 16px;
+}
+
+.portal-overview h2 {
+    margin-bottom: 0.75em;
+}
+
+.youtube-video-container {
+    margin-bottom: 1.5rem;
+}
+
+/* ------------------------------------
+ * Layout 
+ * ------------------------------------ */
+.wsu-portal-page {
+    font-size: 16px;
+}
+
+.wsu-portal-page h1 {
+    font-size: 52px;
+
+    @media screen and (min-width: 520px) {
+        font-size: 72px;
+    }
+}
+
+.wsu-portal-page h2 {
+    font-size: 30px;
+
+    @media screen and (min-width: 520px) {
+        font-size: 35px;
+    }
+}
+
+.wsu-portal-page h3 {
+    font-size: 20px;
+
+    @media screen and (min-width: 520px) {
+        font-size: 25px;
+    }
+}
+
+.wsu-portal-page h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+
+    @media screen and (min-width: 520px) {
+        font-size: 16px;
+    }
+}
+
+.wsu-portal-page .container {
+    width: 100%;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin: 0 auto;
+}
+
+.wsu-portal-page .panel {
+    margin-bottom: 0;
+}
+
+.wsu-portal-page .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.wsu-container .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#Column1 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Replace Bootstrap's container */
+.wsu-portal-page .logo-header,
+#navContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding-right: max(1.5rem, (100% - 1140px) / 2) !important;
+    padding-left: max(1.5rem, (100% - 1140px) / 2) !important;
+}
+
+/* Header adjustments */
+.wsu-portal-page .logo-container {
+    margin-left: -5px;
+}
+
+#btnUserProfileMenu {
+    margin-right: 0 !important;
+    padding-right: 2px !important;
+}
+
+/* Allow full width components */
+.ModuleContent,
+.ModuleContent > div:nth-child(1) {
+    overflow: visible !important;
+}
+
+/* Remove default borders on links */
+[id="content"] a {
+    border-bottom: 0;
+}
+
+/* Stylesheet module */
+#960212 {
+    height: 0;
+}

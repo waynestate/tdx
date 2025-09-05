@@ -1,0 +1,46 @@
+<div class="wsu-search wsu-container">
+    <h2 class="h wsu-search__title">Search</h2>
+    <div class="wsu-search__search-bar">
+        <div class="input-group site-search" id="SiteSearch-e64e5379e9ab4982b3b9b7f9514cb38f">
+            <div class="input-group-btn" id="SiteSearch-dropdown-e64e5379e9ab4982b3b9b7f9514cb38f">
+                <button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-component="all" data-toggle="dropdown" id="SiteSearch-filter-e64e5379e9ab4982b3b9b7f9514cb38f" title="Filter your search by category" type="button">
+                    <span class="fa-solid fa-solid fa-earth-americas"></span>
+                    <span aria-hidden="true" class="fa-solid fa-fw fa-nopad fa-caret-down"></span> 
+                    <span class="sr-only"> Filter your search by category. Current category: <span class="js-current-component">All</span></span>
+                </button>
+                <ul aria-label="Filter your search by category" class="dropdown-menu" role="menu" tabindex="-1">
+                    <li><a data-component="all" data-component-icon="fa-solid fa-earth-americas" data-component-text="All" href="javascript:void(0);" role="menuitem" title="Search all areas"><span aria-hidden="true" class="fa-solid fa-fw fa-nopad fa-earth-americas"></span> All </a></li>
+                    <li aria-hidden="true" class="divider">&nbsp;</li>
+                    <li role="presentation"><a data-component="kb" data-component-icon="fa-lightbulb" data-component-text="Knowledge Base" href="javascript:void(0);" role="menuitem" title="Search Knowledge Base"><span aria-hidden="true" class="fa-regular fa-fw fa-nopad fa-lightbulb"></span> Knowledge Base </a></li>
+                    <li role="presentation"><a data-component="sc" data-component-icon="fa-compass" data-component-text="Service Catalog" href="javascript:void(0);" role="menuitem" title="Search Service Catalog"><span aria-hidden="true" class="fa-solid fa-fw fa-nopad fa-compass"></span> Service Catalog </a></li>
+                </ul>
+            </div>
+            <label class="sr-only" for="SiteSearch-text-e64e5379e9ab4982b3b9b7f9514cb38f">Search the client portal</label> 
+            <input autocomplete="off" class="form-control" id="SiteSearch-text-e64e5379e9ab4982b3b9b7f9514cb38f" placeholder="Search the client portal" title="To search for items with a specific tag, enter the # symbol followed by the name of the tag. To search for items using exact match, place double quotes around your text." type="text" /> 
+            <span class="input-group-btn">
+                <button class="btn btn-default" id="SiteSearch-button-e64e5379e9ab4982b3b9b7f9514cb38f" title="Search" type="button">
+                    <span aria-hidden="true" class="fa-solid fa-fw fa-nopad fa-search blue"></span> 
+                    <span class="sr-only">Search</span> 
+                    <script>
+                        $(function() {
+                            var siteSearch = new TeamDynamix.SiteSearch({
+                                searchUrl: "/TDClient/277/Portal/Shared/Search",
+                                autocompleteSearchUrl: '/TDClient/277/Portal/Shared/AutocompleteSearch',
+                                autocompleteResultsPosition: 'fixed',
+                                autocompleteResultsZIndex: 1000,
+                                searchTextBoxSelector: '#SiteSearch-text-e64e5379e9ab4982b3b9b7f9514cb38f',
+                                searchComponentFilterButtonSelector: '#SiteSearch-filter-e64e5379e9ab4982b3b9b7f9514cb38f',
+                                searchButtonSelector: '#SiteSearch-button-e64e5379e9ab4982b3b9b7f9514cb38f',
+                                searchFilterDropdownSelector: '#SiteSearch-dropdown-e64e5379e9ab4982b3b9b7f9514cb38f',
+                                showKnowledgeBaseOption: true,
+                                showServicesOption: true,
+                                showForumsOption: false,
+                                autoFocusSearch: false
+                            });
+                        });
+                    </script>
+                </button> 
+            </span>
+        </div>
+    </div>
+</div>
