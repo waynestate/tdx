@@ -105,6 +105,7 @@ a.DetailAction {
     padding: 0;
     margin-bottom: 1.3rem;
     border-bottom: 0;
+    color: var(--green);
 }
 
 .divider-gold {
