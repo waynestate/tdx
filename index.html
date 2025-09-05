@@ -3,8 +3,23 @@
     <head>
         <title>TDX Portal</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            fetch('modules/service-portal.html')
+                .then(response => response.text())
+                .then(text => document.getElementById('servicePortal').innerHTML = text);
+            fetch('modules/search.html')
+                .then(response => response.text())
+                .then(text => document.getElementById('search').innerHTML = text);
+            fetch('modules/portal-overview.html')
+                .then(response => response.text())
+                .then(text => document.getElementById('portalOverview').innerHTML = text);
+            fetch('modules/footer.html')
+                .then(response => response.text())
+                .then(text => document.getElementById('footer').innerHTML = text);
+        </script>
 
-        <!-- Copied default styles !-->
+        <!-- Copied default styles -->
         <link rel="stylesheet" href="resources/css/_styles-bootstrap-3.4.1.css">
         <link rel="stylesheet" href="resources/css/_styles-bootstrap-custom.css">
         <link rel="stylesheet" href="resources/css/_styles-TDStyles.css">
@@ -85,3 +100,16 @@
                 <div class="container gutter-top gutter-bottom-lg">
                     <div class="row">
                         <div id="Column1" class="col-md-12 ui-sortable">
+                            <!-- Start modules -->
+                            <div id="servicePortal"></div>
+                            <div id="search"></div>
+                            <div id="portalOverview"></div>
+                            <div id="footer"></div>
+                            <!-- End modules -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
