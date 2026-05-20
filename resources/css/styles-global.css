@@ -109,6 +109,7 @@ footer {
 }
 
 .nav.navbar-nav.js-submenu li a:hover {
+.nav.navbar-nav.js-submenu li a:focus,
     background-color: #f5f5f5 !important;
     text-decoration-line: underline;
     text-decoration-color: var(--green-500);
