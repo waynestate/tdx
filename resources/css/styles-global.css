@@ -82,7 +82,7 @@ footer {
 
 .nav.navbar-nav li.themed.tdbar-button-anchored.active a,
 .nav.navbar-nav li.active a {
-    color: var(--gold);
+    color: var(--gold) !important;
     font-weight: 400;
     text-decoration-line: underline;
     text-decoration-color: var(--gold);
@@ -95,7 +95,7 @@ footer {
 .nav.navbar-nav li.themed.tdbar-button-anchored a:focus,
 .nav.navbar-nav li a:hover, 
 .nav.navbar-nav li a:focus {
-    background-color: transparent !important;
+    background-color: var(--green-500) !important;
     color: var(--gold) !important;
     font-weight: normal !important;
 }
