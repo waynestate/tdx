@@ -270,10 +270,6 @@
 }
 
 /* Header adjustments */
-.wsu-portal-page .logo-container {
-    margin-left: -5px;
-}
-
 #btnUserProfileMenu {
     margin-right: 0 !important;
     padding-right: 2px !important;
