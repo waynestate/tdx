@@ -100,6 +100,19 @@ footer {
     font-weight: normal !important;
 }
 
+.nav.navbar-nav.js-submenu li a {
+    color: var(--green-500) !important;
+}
+
+.nav.navbar-nav.js-submenu li a:hover {
+    background-color: #e0e0e0 !important;
+    text-decoration-line: underline;
+    text-decoration-color: var(--green-500);
+    text-decoration-style: solid;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
 /* ------------------------------------
  * Logo 
  * ------------------------------------ */
