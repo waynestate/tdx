@@ -1,9 +1,42 @@
 /* ------------------------------------
+ * Variables 
+ * ------------------------------------ */
+
+:root {
+    --font-family: 'Lato', sans-serif;
+
+    --white: #ffffff;
+    --black: #18181b;
+
+    --green: #0c5449;
+    --green-50: #cedddb;
+    --green-100: #9ebbb6;
+    --green-200: #6d9892;
+    --green-300: #3d766d;
+    --green-500: #0b4a40;
+    --green-600: #094038;
+    --green-700: #08352f;
+    --green-800: #062b27;
+    --green-900: #05211e;
+
+    --gold: #ffcc33;
+    --gold-50: #fff5d6;
+    --gold-100: #ffebad;
+    --gold-200: #ffe085;
+    --gold-300: #ffd65c;
+    --gold-500: #edbd2c;
+    --gold-600: #dbae25;
+    --gold-700: #c89f1f;
+    --gold-800: #b69018;
+    --gold-900: #a48111;
+}
+
+/* ------------------------------------
  * Layout 
  * ------------------------------------ */
 
 body {
-    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    font-family: var(--font-family) !important;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -43,44 +76,12 @@ footer {
 }
 
 .tdbar {
-    background-color: #0c5449;
-    border-color: #0c5449;
+    background-color: var(--green);
+    border-color: var(--green);
 }
 
 .navbar-default .navbar-nav li a:hover {
-  background-color: #094038;
-}
-
-
-/* ------------------------------------
- * Global styles 
- * ------------------------------------ */
-
-:root {
-    --white: #ffffff;
-    --black: #18181b;
-
-    --green: #0c5449;
-    --green-50: #cedddb;
-    --green-100: #9ebbb6;
-    --green-200: #6d9892;
-    --green-300: #3d766d;
-    --green-500: #0b4a40;
-    --green-600: #094038;
-    --green-700: #08352f;
-    --green-800: #062b27;
-    --green-900: #05211e;
-
-    --gold: #ffcc33;
-    --gold-50: #fff5d6;
-    --gold-100: #ffebad;
-    --gold-200: #ffe085;
-    --gold-300: #ffd65c;
-    --gold-500: #edbd2c;
-    --gold-600: #dbae25;
-    --gold-700: #c89f1f;
-    --gold-800: #b69018;
-    --gold-900: #a48111;
+    background-color: var(--green-600);
 }
 
 /* ------------------------------------
@@ -101,11 +102,19 @@ a.DetailAction {
 /* ------------------------------------
  * Headings 
  * ------------------------------------ */
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-family) !important;
+}
+
 .h {
     padding: 0;
     margin-bottom: 1.3rem;
     border-bottom: 0;
     color: var(--green);
+    font-family: var(--font-family);
 }
 
 .divider-gold {
@@ -129,7 +138,7 @@ a.DetailAction {
             margin-left: 1rem;
             top: 60%;
             bottom: auto;
-            background-color: #ffcc33;
+            background-color: var(--gold);
             transform: translateY(-30%);
         }
     }
@@ -229,7 +238,7 @@ a.DetailAction {
 .wsu-footer .wsu-footer__wayne-contact,
 .wsu-footer .wsu-footer__cit-contact,
 .wsu-footer__support-contact {
-        width: 100%;
+    width: 100%;
 }
 
 .wsu-footer table {

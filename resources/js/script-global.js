@@ -15,7 +15,7 @@ document.head.insertAdjacentHTML(
 
 document.head.insertAdjacentHTML(
     'beforeend',
-    '<link rel="stylesheet" href="https://breakdancingcat.github.io/css/styles-global.css" />',
+    '<link rel="stylesheet" href="https://waynestate.github.io/tdx/resources/css/styles-global.css" />',
 );
 
 // After the DOM has fully loaded, inject Google Tag Manager
